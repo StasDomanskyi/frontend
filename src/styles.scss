@@ -14,6 +14,14 @@
 
 body {
   margin: 0;
+  background: rgb(158,153,245);
+  height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(158,153,245,0.7315301120448179) 0%,
+    rgba(190,190,246,0.865983893557423) 35%,
+    rgba(255,255,255,0.6811099439775911) 100%
+  );
 }
 
 .title {
@@ -32,7 +40,38 @@ body {
   text-align: center;
   cursor: pointer;
   background-color: #e47847;
+  -webkit-box-shadow: 
+    16px 14px 33px -13px rgba(0,0,0,0.75),
+    inset 16px 14px 63px -24px rgba(212,211,214,1);
+  -moz-box-shadow: 
+    16px 14px 33px -13px rgba(0,0,0,0.75),
+    inset 16px 14px 63px -24px rgba(212,211,214,1);
+  box-shadow: 
+    16px 14px 33px -13px rgba(0,0,0,0.75),
+    inset 16px 14px 63px -24px rgba(212,211,214,1);
 }
+
+.btn:hover {
+  background-color: #ffc0a3;;
+}
+
+.btn:active {
+  margin: 1rem 0 0 1rem;
+  background-color: #b5b7f0;
+  position: relative;
+  top: 0.2rem;
+  left: 0.2rem;
+  -webkit-box-shadow: 
+    16px 14px 33px -13px rgba(0,0,0,0.75),
+    inset 16px 14px 63px -24px rgba(132,131,135,1);
+  -moz-box-shadow: 
+    16px 14px 33px -13px rgba(0,0,0,0.75),
+    inset 16px 14px 63px -24px rgba(132,131,135,1);
+  box-shadow: 
+    16px 14px 33px -13px rgba(0,0,0,0.75),
+    inset 16px 14px 63px -24px rgba(132,131,135,1);
+}
+
 
 .fs-1 {
   font-size: 2rem;
