@@ -1,0 +1,13 @@
+.menu {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  margin: 1rem;
+  width: 20%;
+  list-style: none;
+}

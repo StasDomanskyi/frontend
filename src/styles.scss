@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Arimo';
+  src: url(assets/Arimo/Arimo-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Arimo Bold';
+  src: url(assets/Arimo/Arimo-Bold.ttf);
+}
+
+* {
+  font-family: 'Arimo';
+}
+
+body {
+  margin: 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 6px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e47847;
+}
+
+.fs-1 {
+  font-size: 2rem;
+}
+
+.fs-2 {
+  font-size: 1.75rem;
+}
