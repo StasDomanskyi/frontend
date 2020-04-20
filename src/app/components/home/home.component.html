@@ -1,0 +1,5 @@
+<h2 class="title fs-2">{{ title | titlecase }}</h2>
+
+<ul class="menu">
+  <li class="menu-item btn" *ngFor="let key of forms" [routerLink]="key.link">{{ key.name }}</li>
+</ul>

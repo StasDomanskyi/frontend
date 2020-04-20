@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IForms } from '../interfaces/forms';
+import { IForms } from '../../interfaces/forms';
 
 @Component({
   selector: 'app-home',
@@ -7,40 +7,40 @@ import { IForms } from '../interfaces/forms';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public title: string = 'меню';
+  public title: string = 'головне меню';
 
   public forms: IForms[] = [
     {
       name: 'Cписок клієнтів',
-      link: '',
+      link: '/client-list',
     },
     {
       name: 'Дані про рахунок',
-      link: '',
+      link: '/account-data',
     },
     {
       name: 'Дані про послугу хостингу',
-      link: '',
+      link: '/hosting-service-data',
     },
     {
       name: 'Дані про запити в підтримку',
-      link: '',
+      link: '/support-data',
     },
     {
       name: 'Дані про додаткові послуги',
-      link: '',
+      link: '/additional-data',
     },
     {
       name: 'Дані про працівника компанії',
-      link: '',
+      link: '/employee-data',
     },
     {
       name: 'Дані про сервер',
-      link: '',
+      link: '/server-data',
     },
     {
       name: 'Список доменів',
-      link: '',
+      link: '/domain-list',
     },
   ];
 
