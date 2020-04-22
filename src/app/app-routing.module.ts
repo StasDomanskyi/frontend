@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { ClientsListComponent } from './components/clients-list/clients-list.component';
+import { ClientsListComponent } from './components/clients-list/clients-list-component/clients-list.component';
 import { DomainListComponent } from './components/domain-list/domain-list.component';
 import { ServerDataComponent } from './components/server-data/server-data.component';
 import { EmployeeDataComponent } from './components/employee-data/employee-data.component';
@@ -9,11 +9,19 @@ import { HostingServiceDataComponent } from './components/hosting-service-data/h
 import { AccountDataComponent } from './components/account-data/account-data.component';
 import { SupportDataComponent } from './components/support-data/support-data.component';
 import { AdditionalDataComponent } from './components/additional-data/additional-data.component';
+import { GetClientsListComponent } from './components/clients-list/get-clients-list/get-clients-list.component';
+import { PostClientsListComponent } from './components/clients-list/post-clients-list/post-clients-list.component';
+import { PutClientsListComponent } from './components/clients-list/put-clients-list/put-clients-list.component';
+import { DeleteClientsListComponent } from './components/clients-list/delete-clients-list/delete-clients-list.component';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'client-list', component: ClientsListComponent},
+  {path: 'client-list/get-form', component: GetClientsListComponent},
+  {path: 'client-list/post-form', component: PostClientsListComponent},
+  {path: 'client-list/put-form', component: PutClientsListComponent},
+  {path: 'client-list/delete-form', component: DeleteClientsListComponent},
   {path: 'server-data', component: ServerDataComponent},
   {path: 'employee-data', component: EmployeeDataComponent},
   {path: 'hosting-service-data', component: HostingServiceDataComponent},
