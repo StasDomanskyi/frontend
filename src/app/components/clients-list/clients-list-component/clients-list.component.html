@@ -18,5 +18,35 @@
 </div>
 
 <div class="home-btn-wrapper">
-  <button routerLink="../" class="btn home-btn fs-5">До головного меню</button>
+  <div class="menu-item inner-menu-item">
+    <button routerLink="../" class="home-btn fs-5">До головного меню</button>
+  </div>
+  <div class="menu-item inner-menu-item">
+    <button class="home-btn fs-5" (click)="getAll()">Отримати всі дані</button>
+  </div>
+</div>
+
+<div *ngIf="items">
+  <table class="general-table">
+    <thead>
+      <tr>
+      <th>№</th>
+      <th>ПІБ клієнта</th>
+      <th>E-mail</th>
+      <th>Номер телефона</th>
+      <th>Статус</th>
+      <th>Баланс</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{item.user_number}}</td>
+        <td>{{item.user_name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.user_status}}</td>
+        <td>{{item.user_number}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

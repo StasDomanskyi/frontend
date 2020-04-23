@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { HttpService } from 'src/app/services/httpService/http-service';
+import { HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'app-get-clients-list',
@@ -13,15 +15,24 @@ export class GetClientsListComponent implements OnInit {
   });
 
   public request: string = null;
+  public items: any;
 
-  constructor() { }
+  constructor(private httpService: HttpService) { }
 
   ngOnInit() {
   }
 
   public sendRequest() {
-    
     this.request = `http://localhost:3000/r1/${this.getForm.value.key}/${this.getForm.value.valueOfKey}`;
-    console.log(this.request);
+
+    this.getData(this.request);
+    return this.items;
+  }
+
+  async getData(endpoint) {
+    let subscribtion = await this.httpService.get(endpoint).subscribe((res) => {
+      console.log(res);
+      this.items = res;
+    });
   }
 }

@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +19,7 @@ import { GetClientsListComponent } from './components/clients-list/get-clients-l
 import { PutClientsListComponent } from './components/clients-list/put-clients-list/put-clients-list.component';
 import { DeleteClientsListComponent } from './components/clients-list/delete-clients-list/delete-clients-list.component';
 import { PostClientsListComponent } from './components/clients-list/post-clients-list/post-clients-list.component';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -37,8 +40,10 @@ import { PostClientsListComponent } from './components/clients-list/post-clients
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
