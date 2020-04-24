@@ -12,4 +12,15 @@ export class HttpService {
     return this.http.get(endpoint);
   }
 
+  public post(endpoint: string, data) {
+    return this.http.post(endpoint, data);
+  }
+
+  public put(endpoint: string, data) {
+    return this.http.put(endpoint, data);
+  }
+
+  public delete(endpoint: string) {
+    return this.http.delete(endpoint);
+  }
 }
