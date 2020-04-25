@@ -8,8 +8,11 @@ export class HttpService {
 
   constructor(private http: HttpClient) { }
 
-  public get(endpoint: string) {
-    return this.http.get(endpoint);
+  public get(endpoint: string, data?: any) {
+    if(!data) {
+      data = {};
+    }
+    return this.http.get(endpoint, data);
   }
 
   public post(endpoint: string, data) {

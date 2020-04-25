@@ -4,11 +4,11 @@ import { HttpService } from 'src/app/services/httpService/http-service';
 import { HttpParams } from '@angular/common/http';
 
 @Component({
-  selector: 'app-get-clients-list',
-  templateUrl: './get-clients-list.component.html',
-  styleUrls: ['./get-clients-list.component.scss']
+  selector: 'app-get-support-data',
+  templateUrl: './get-support-data.component.html',
+  styleUrls: ['./get-support-data.component.scss']
 })
-export class GetClientsListComponent implements OnInit {
+export class GetSupportDataComponent implements OnInit {
   public getForm = new FormGroup({
     key: new FormControl(''),
     valueOfKey: new FormControl(''),
@@ -24,13 +24,14 @@ export class GetClientsListComponent implements OnInit {
   }
 
   public sendRequest() {
-    this.request = `http://localhost:3000/r1/${
-    this.getForm.value.key
-    }/${
-    this.getForm.value.status
-    }/${
-    this.getForm.value.valueOfKey}`;
-    
+    this.request = `http://localhost:3000/r4/${
+      this.getForm.value.key
+      }/${
+      this.getForm.value.valueOfKey
+      }/${
+      this.getForm.value.status
+    }`;
+    console.log(this.getForm.value);
     this.getData(this.request);
     return this.items;
   }

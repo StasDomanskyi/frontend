@@ -1,0 +1,63 @@
+<h2 class="title fs-2">Отримати дані про послугу</h2>
+
+<form   [formGroup]="getForm" (ngSubmit)="sendRequest()">
+  <div class="form-fields-container">
+    <label class="form-field">
+      <span class="field-label">Ключ:</span>
+      <select class="select" formControlName="key">
+        <option value="service_number" selected>Номер послуги</option>
+        <option value="service_name">Назва послуги</option>
+      </select>
+    </label>
+    
+    <label  class="form-field">
+      <span class="field-label">Значення ключа:</span>
+      <input class="input" type="text" formControlName="valueOfKey">
+    </label>
+
+    <label  class="form-field">
+      <span class="field-label">Домен:</span>
+      <input class="input" type="text" formControlName="domain">
+    </label>
+  </div>
+  <div class="home-btn-wrapper">
+    <button class="btn home-btn fs-5" type="submit">Відправити запит</button>
+  </div>
+</form>
+
+<h3 *ngIf="request" class="title"> Запит надісланий на: {{request}}</h3>
+
+<div *ngIf="items">
+  <table>
+    <thead>
+      <tr>
+      <th class="narrow">Назва послуги</th>
+      <th>Номер послуги</th>
+      <th>Номер клієнта</th>
+      <th class="narrow">Основний домен/хостнейм</th>
+      <th>Статус</th>
+      <th class="narrow">Сервер</th>
+      <th>Дата замовлення</th>
+      <th class="narrow">Дата закінчення</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td class="narrow">{{item.service_name}}</td>
+        <td>{{item.service_number}}</td>
+        <td>{{item.client_number}}</td>
+        <td class="narrow">{{item.main_domain}}</td>
+        <td>{{item.status}}</td>
+        <td class="narrow">{{item.server}}</td>
+        <td>{{item.order_date | date:"yyyy-MM-dd"}}</td>
+        <td class="narrow">{{item.end_date| date:"yyyy-MM-dd"}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="home-btn-wrapper">
+  <button routerLink="../" class="btn home-btn fs-5">Назад</button>
+</div>
+
+
