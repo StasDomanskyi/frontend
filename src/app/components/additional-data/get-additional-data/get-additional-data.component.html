@@ -1,0 +1,62 @@
+<h2 class="title fs-2">Отримати дані про додаткові послуги</h2>
+
+<form   [formGroup]="getForm" (ngSubmit)="sendRequest()">
+  <div class="form-fields-container">
+    <label class="form-field">
+      <span class="field-label">Статус послуги:</span>
+      <select class="select" formControlName="status">
+        <option value="'Активна'" selected>Активна</option>
+        <option value="'Призупинена'">Призупинена</option>
+        <option value="'Видалена'">Видалена</option>
+        <option value="'Відмінена'">Відмінена</option>
+      </select>
+    </label>
+    
+    <label class="form-field">
+      <span class="field-label">Ключ:</span>
+      <select class="select" formControlName="key">
+        <option value="addon_number" selected>Номер послуги</option>
+        <option value="addon_name">Ім'я послуги</option>
+      </select>
+    </label>
+    
+    <label  class="form-field">
+      <span class="field-label">Значення ключа:</span>
+      <input class="input" type="text" formControlName="valueOfKey">
+    </label>
+  </div>
+  <div class="home-btn-wrapper">
+    <button class="btn home-btn fs-5" type="submit">Відправити запит</button>
+  </div>
+</form>
+
+<h3 *ngIf="request" class="title"> Запит надісланий на: {{request}}</h3>
+
+<div *ngIf="items">
+  <table>
+    <thead>
+      <tr>
+      <th>№ рахунка</th>
+      <th>Опис послуги</th>
+      <th>Сума</th>
+      <th>Статус</th>
+      <th>№ клієнта</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{item.account_number}}</td>
+        <td>{{item.account_description}}</td>
+        <td>{{item.sum}}</td>
+        <td>{{item.account_status}}</td>
+        <td>{{item.client_number}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="home-btn-wrapper">
+  <button routerLink="../" class="btn home-btn fs-5">Назад</button>
+</div>
+
+
