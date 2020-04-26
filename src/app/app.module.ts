@@ -30,6 +30,7 @@ import { PostEmployeeDataComponent } from './components/employee-data/post-emplo
 import { PostServerDataComponent } from './components/server-data/post-server-data/post-server-data.component';
 import { PostDomainListComponent } from './components/domain-list/post-domain-list/post-domain-list.component';
 import { GetEmployeeDataComponent } from './components/employee-data/get-employee-data/get-employee-data.component';
+import { GetDomainListComponent } from './components/domain-list/get-domain-list/get-domain-list.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,7 @@ import { GetEmployeeDataComponent } from './components/employee-data/get-employe
     /* PutServerDataComponent, */
     /* DeleteServerDataComponent, */
     DomainListComponent,
-    /* GetDomainListComponent, */
+    GetDomainListComponent,
     PostDomainListComponent,
     /* PutDomainListComponent, */
     /* DeleteDomainListComponent, */

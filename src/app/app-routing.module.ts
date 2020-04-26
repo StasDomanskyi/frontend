@@ -25,6 +25,7 @@ import { PostEmployeeDataComponent } from './components/employee-data/post-emplo
 import { PostServerDataComponent } from './components/server-data/post-server-data/post-server-data.component';
 import { PostDomainListComponent } from './components/domain-list/post-domain-list/post-domain-list.component';
 import { GetEmployeeDataComponent } from './components/employee-data/get-employee-data/get-employee-data.component';
+import { GetDomainListComponent } from './components/domain-list/get-domain-list/get-domain-list.component';
 
 
 const routes: Routes = [
@@ -73,7 +74,7 @@ const routes: Routes = [
   /* {path: 'server-data/delete-form', component: DeleteServerDataComponent}, */
   // DOMAIN LIST
   {path: 'domain-list', component: DomainListComponent},
-  /* {path: 'domain-list/get-form', component: GetDomainListComponent}, */
+  {path: 'domain-list/get-form', component: GetDomainListComponent},
   {path: 'domain-list/post-form', component: PostDomainListComponent},
   /* {path: 'domain-list/put-form', component: PutDomainListComponent}, */
   /* {path: 'domain-list/delete-form', component: DeleteDomainListComponent}, */
