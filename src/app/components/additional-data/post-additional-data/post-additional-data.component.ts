@@ -9,12 +9,13 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class PostAdditionalDataComponent implements OnInit {
   public postForm = new FormGroup({
-    user_number: new FormControl(''),
-    user_name: new FormControl(''),
-    email: new FormControl(''),
-    phone: new FormControl(''),
-    status: new FormControl(''),
-    balance: new FormControl(''),
+    addon_name: new FormControl(''),
+    addon_number: new FormControl(''),
+    client_number: new FormControl(''),
+    main_domain: new FormControl(''),
+    addon_status: new FormControl(''),
+    order_date: new FormControl(''),
+    end_date: new FormControl(''),
   });
 
   public request: string = null;
@@ -25,7 +26,7 @@ export class PostAdditionalDataComponent implements OnInit {
   }
 
   public sendRequest() {
-    this.request = `http://localhost:3000/r1`;
+    this.request = `http://localhost:3000/r5`;
     this.postData(this.request, this.postForm.value);
   }
 

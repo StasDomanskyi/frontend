@@ -1,35 +1,40 @@
-<h2 class="title fs-2">Додати клієнта</h2>
+<h2 class="title fs-2">Додати додаткову послугу</h2>
 
 <form   [formGroup]="postForm" (ngSubmit)="sendRequest()">
   <div class="form-fields-container">
     <label class="form-field">
+      <span class="field-label">Назва послуги:</span>
+      <input class="input" type="text" formControlName="addon_name">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Номер послуги:</span>
+      <input class="input" type="text" formControlName="addon_number">
+    </label>
+
+    <label class="form-field">
       <span class="field-label">Номер клієнта:</span>
-      <input class="input" type="text" formControlName="user_number">
-    </label>
-
-    <label class="form-field">
-      <span class="field-label">Ім'я клієнта:</span>
-      <input class="input" type="text" formControlName="user_name">
-    </label>
-
-    <label class="form-field">
-      <span class="field-label">E-mail:</span>
-      <input class="input" type="text" formControlName="email">
+      <input class="input" type="text" formControlName="client_number">
     </label>
 
     <label for="valueOfKey" class="form-field">
-      <span class="field-label">Номер телефону:</span>
-      <input class="input" type="text" formControlName="phone">
+      <span class="field-label">Основний домен:</span>
+      <input class="input" type="text" formControlName="main_domain">
     </label>
     
     <label class="form-field">
       <span class="field-label">Статус:</span>
-      <input class="input" type="text" formControlName="status">
+      <input class="input" type="text" formControlName="addon_status">
     </label>
-
+    
     <label class="form-field">
-      <span class="field-label">Баланс:</span>
-      <input class="input" type="text" formControlName="balance">
+      <span class="field-label">Дата замовлення:</span>
+      <input class="input" type="text" formControlName="order_date">
+    </label>
+    
+    <label class="form-field">
+      <span class="field-label">Дата закінчення:</span>
+      <input class="input" type="text" formControlName="end_date">
     </label>
   </div>
   <div class="home-btn-wrapper">

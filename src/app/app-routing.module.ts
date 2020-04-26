@@ -19,6 +19,12 @@ import { GetSupportDataComponent } from './components/support-data/get-support-d
 import { GetAdditionalDataComponent } from './components/additional-data/get-additional-data/get-additional-data.component';
 import { PostAccountDataComponent } from './components/account-data/post-account-data/post-account-data.component';
 import { PostHostingServiceDataComponent } from './components/hosting-service-data/post-hosting-service-data/post-hosting-service-data.component';
+import { PostSupportDataComponent } from './components/support-data/post-support-data/post-support-data.component';
+import { PostAdditionalDataComponent } from './components/additional-data/post-additional-data/post-additional-data.component';
+import { PostEmployeeDataComponent } from './components/employee-data/post-employee-data/post-employee-data.component';
+import { PostServerDataComponent } from './components/server-data/post-server-data/post-server-data.component';
+import { PostDomainListComponent } from './components/domain-list/post-domain-list/post-domain-list.component';
+import { GetEmployeeDataComponent } from './components/employee-data/get-employee-data/get-employee-data.component';
 
 
 const routes: Routes = [
@@ -44,31 +50,31 @@ const routes: Routes = [
   // SUPPORT DATA
   {path: 'support-data', component: SupportDataComponent},
   {path: 'support-data/get-form', component: GetSupportDataComponent},
-  /* {path: 'support-data/post-form', component: PostSupportDataComponent}, */
+  {path: 'support-data/post-form', component: PostSupportDataComponent},
   /* {path: 'support-data/put-form', component: PutSupportDataComponent}, */
   /* {path: 'support-data/delete-form', component: DeletetSupportDataComponent}, */
   // ADDITIONAL DATA
   {path: 'additional-data', component: AdditionalDataComponent},
   {path: 'additional-data/get-form', component: GetAdditionalDataComponent},
-  /* {path: 'additional-data/post-form', component: PostAdditionalDataComponent}, */
+  {path: 'additional-data/post-form', component: PostAdditionalDataComponent},
   /* {path: 'additional-data/put-form', component: PutAdditionalDataComponent}, */
   /* {path: 'additional-data/delete-form', component: DeleteAdditionalDataComponent}, */
   // EMPLOYEE DATA
   {path: 'employee-data', component: EmployeeDataComponent},
-  /* {path: 'employee-data/get-form', component: GetEmployeeDataComponent}, */
-  /* {path: 'employee-data/post-form', component: PostEmployeeDataComponent}, */
+  {path: 'employee-data/get-form', component: GetEmployeeDataComponent},
+  {path: 'employee-data/post-form', component: PostEmployeeDataComponent},
   /* {path: 'employee-data/put-form', component: PutEmployeeDataComponent}, */
   /* {path: 'employee-data/delete-form', component: DeleteEmployeeDataComponent}, */
   // SERVER DATA  
   {path: 'server-data', component: ServerDataComponent},
   /* {path: 'server-data/get-form', component: GetServerDataComponent}, */
-  /* {path: 'server-data/post-form', component: PostServerDataComponent}, */
+  {path: 'server-data/post-form', component: PostServerDataComponent},
   /* {path: 'server-data/put-form', component: PutServerDataComponent}, */
   /* {path: 'server-data/delete-form', component: DeleteServerDataComponent}, */
   // DOMAIN LIST
   {path: 'domain-list', component: DomainListComponent},
   /* {path: 'domain-list/get-form', component: GetDomainListComponent}, */
-  /* {path: 'domain-list/post-form', component: PostDomainListComponent}, */
+  {path: 'domain-list/post-form', component: PostDomainListComponent},
   /* {path: 'domain-list/put-form', component: PutDomainListComponent}, */
   /* {path: 'domain-list/delete-form', component: DeleteDomainListComponent}, */
   

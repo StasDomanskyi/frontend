@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PostClientsListComponent } from './post-clients-list.component';
+import { PostServerDataComponent } from './post-server-data.component';
 
-describe('PostClientsListComponent', () => {
-  let component: PostClientsListComponent;
-  let fixture: ComponentFixture<PostClientsListComponent>;
+describe('PostServerDataComponent', () => {
+  let component: PostServerDataComponent;
+  let fixture: ComponentFixture<PostServerDataComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PostClientsListComponent ]
+      declarations: [ PostServerDataComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PostClientsListComponent);
+    fixture = TestBed.createComponent(PostServerDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

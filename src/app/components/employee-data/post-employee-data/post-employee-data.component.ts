@@ -3,18 +3,19 @@ import { HttpService } from 'src/app/services/httpService/http-service';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-post-clients-list',
-  templateUrl: './post-clients-list.component.html',
-  styleUrls: ['./post-clients-list.component.scss']
+  selector: 'app-post-employee-data',
+  templateUrl: './post-employee-data.component.html',
+  styleUrls: ['./post-employee-data.component.scss']
 })
-export class PostClientsListComponent implements OnInit {
+export class PostEmployeeDataComponent implements OnInit {
   public postForm = new FormGroup({
-    user_number: new FormControl(''),
-    user_name: new FormControl(''),
+    employee_full_name: new FormControl(''),
+    age: new FormControl(''),
+    experience: new FormControl(''),
+    position: new FormControl(''),
     email: new FormControl(''),
-    phone: new FormControl(''),
-    status: new FormControl(''),
-    balance: new FormControl(''),
+    phone_number: new FormControl(''),
+    employee_number: new FormControl(''),
   });
 
   public request: string = null;
@@ -25,7 +26,7 @@ export class PostClientsListComponent implements OnInit {
   }
 
   public sendRequest() {
-    this.request = `http://localhost:3000/r1`;
+    this.request = `http://localhost:3000/r6`;
     this.postData(this.request, this.postForm.value);
   }
 

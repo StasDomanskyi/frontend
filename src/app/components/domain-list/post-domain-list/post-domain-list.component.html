@@ -1,0 +1,52 @@
+<h2 class="title fs-2">Додати домен</h2>
+
+<form   [formGroup]="postForm" (ngSubmit)="sendRequest()">
+  <div class="form-fields-container">
+    <label class="form-field">
+      <span class="field-label">Ім’я домена:</span>
+      <input class="input" type="text" formControlName="domain_name">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">NS, що використовує домен:</span>
+      <input class="input" type="text" formControlName="NS">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Номер власника:</span>
+      <input class="input" type="text" formControlName="client_number">
+    </label>
+
+    <label for="valueOfKey" class="form-field">
+      <span class="field-label">Статус домена:</span>
+      <input class="input" type="text" formControlName="domain_status">
+    </label>
+    
+    <label class="form-field">
+      <span class="field-label">Номер ел.рахунку:</span>
+      <input class="input" type="text" formControlName="invoice">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Реєстратор:</span>
+      <input class="input" type="text" formControlName="register">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Дата реєстрації:</span>
+      <input class="input" type="text" formControlName="register_date">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Дата відключення:</span>
+      <input class="input" type="text" formControlName="end_date">
+    </label>
+  </div>
+  <div class="home-btn-wrapper">
+    <button class="btn home-btn fs-5" type="submit">Відправити запит</button>
+  </div>
+</form>
+
+<div class="home-btn-wrapper">
+  <button routerLink="../" class="btn home-btn fs-5">Назад</button>
+</div>

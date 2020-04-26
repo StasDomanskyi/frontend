@@ -1,0 +1,47 @@
+<h2 class="title fs-2">Додати працівника</h2>
+
+<form   [formGroup]="postForm" (ngSubmit)="sendRequest()">
+  <div class="form-fields-container">
+    <label class="form-field">
+      <span class="field-label">ПІБ:</span>
+      <input class="input" type="text" formControlName="employee_full_name">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Вік:</span>
+      <input class="input" type="text" formControlName="age">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Досвід:</span>
+      <input class="input" type="text" formControlName="experience">
+    </label>
+
+    <label for="valueOfKey" class="form-field">
+      <span class="field-label">Посада:</span>
+      <input class="input" type="text" formControlName="position">
+    </label>
+    
+    <label class="form-field">
+      <span class="field-label">E-mail:</span>
+      <input class="input" type="text" formControlName="email">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Номер телефону:</span>
+      <input class="input" type="text" formControlName="phone_number">
+    </label>
+
+    <label class="form-field">
+      <span class="field-label">Номер працівника:</span>
+      <input class="input" type="text" formControlName="employee_number">
+    </label>
+  </div>
+  <div class="home-btn-wrapper">
+    <button class="btn home-btn fs-5" type="submit">Відправити запит</button>
+  </div>
+</form>
+
+<div class="home-btn-wrapper">
+  <button routerLink="../" class="btn home-btn fs-5">Назад</button>
+</div>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PostClientsListComponent } from './post-clients-list.component';
+import { PostDomainListComponent } from './post-domain-list.component';
 
-describe('PostClientsListComponent', () => {
-  let component: PostClientsListComponent;
-  let fixture: ComponentFixture<PostClientsListComponent>;
+describe('PostDomainListComponent', () => {
+  let component: PostDomainListComponent;
+  let fixture: ComponentFixture<PostDomainListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PostClientsListComponent ]
+      declarations: [ PostDomainListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PostClientsListComponent);
+    fixture = TestBed.createComponent(PostDomainListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

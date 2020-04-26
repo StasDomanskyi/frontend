@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server-data.component.scss']
 })
 export class ServerDataComponent implements OnInit {
-  public title: string = 'Дані про запити сервер';
+  public title: string = 'Дані про сервер';
 
   constructor() { }
 

@@ -24,6 +24,12 @@ import { GetSupportDataComponent } from './components/support-data/get-support-d
 import { GetAdditionalDataComponent } from './components/additional-data/get-additional-data/get-additional-data.component';
 import { PostAccountDataComponent } from './components/account-data/post-account-data/post-account-data.component';
 import { PostHostingServiceDataComponent } from './components/hosting-service-data/post-hosting-service-data/post-hosting-service-data.component';
+import { PostSupportDataComponent } from './components/support-data/post-support-data/post-support-data.component';
+import { PostAdditionalDataComponent } from './components/additional-data/post-additional-data/post-additional-data.component';
+import { PostEmployeeDataComponent } from './components/employee-data/post-employee-data/post-employee-data.component';
+import { PostServerDataComponent } from './components/server-data/post-server-data/post-server-data.component';
+import { PostDomainListComponent } from './components/domain-list/post-domain-list/post-domain-list.component';
+import { GetEmployeeDataComponent } from './components/employee-data/get-employee-data/get-employee-data.component';
 
 @NgModule({
   declarations: [
@@ -46,27 +52,27 @@ import { PostHostingServiceDataComponent } from './components/hosting-service-da
     /* DeleteHostingServiceDataComponent, */
     SupportDataComponent,
     GetSupportDataComponent,
-    /* PostSupportDataComponent, */
+    PostSupportDataComponent,
     /* PutSupportDataComponent, */
     /* DeleteSupportDataComponent, */
     AdditionalDataComponent,
     GetAdditionalDataComponent,
-    /* PostAdditionalDataComponent, */
+    PostAdditionalDataComponent,
     /* PutAdditionalDataComponent, */
     /* DeleteAdditionalDataComponent, */
     EmployeeDataComponent,
-    /* GetEmployeeDataComponent, */
-    /* PostEmployeeDataComponent, */
+    GetEmployeeDataComponent,
+    PostEmployeeDataComponent,
     /* PutEmployeeDataComponent, */
     /* DeleteEmployeeDataComponent, */
     ServerDataComponent,
     /* GetServerDataComponent, */
-    /* PostServerDataComponent, */
+    PostServerDataComponent,
     /* PutServerDataComponent, */
     /* DeleteServerDataComponent, */
     DomainListComponent,
     /* GetDomainListComponent, */
-    /* PostDomainListComponent, */
+    PostDomainListComponent,
     /* PutDomainListComponent, */
     /* DeleteDomainListComponent, */
   ],
