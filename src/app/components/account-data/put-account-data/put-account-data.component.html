@@ -1,12 +1,12 @@
-<h2 class="title fs-2">Змінити дані про клієнта</h2>
+<h2 class="title fs-2">Змінити дані про рахунок</h2>
 
 <form   [formGroup]="putForm" (ngSubmit)="sendRequest()">
   <div class="form-fields-container">
     <label class="form-field">
       <span class="field-label">Ключ:</span>
       <select class="select" formControlName="key">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
+        <option value="account_number">Номер рахунку</option>
+        <option value="account_description">Опис рахунку</option>
       </select>
     </label>
     
@@ -18,12 +18,11 @@
     <label class="form-field">
       <span class="field-label">Поле:</span>
       <select class="select" formControlName="field">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
-        <option value="email">E-mail</option>
-        <option value="phone">Номер телефону</option>
-        <option value="user_status">Статус</option>
-        <option value="balance">Баланс</option>
+        <option value="account_number">Номер клієнта</option>
+        <option value="account_description">Ім'я клієнта</option>
+        <option value="sum">E-mail</option>
+        <option value="account_status">Номер телефону</option>
+        <option value="client_number">Номер клієнта</option>
       </select>
     </label>
 

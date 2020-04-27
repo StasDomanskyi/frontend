@@ -13,7 +13,7 @@ export class PostClientsListComponent implements OnInit {
     user_name: new FormControl(''),
     email: new FormControl(''),
     phone: new FormControl(''),
-    status: new FormControl(''),
+    user_status: new FormControl(''),
     balance: new FormControl(''),
   });
 

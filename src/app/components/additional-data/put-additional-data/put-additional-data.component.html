@@ -1,29 +1,22 @@
-<h2 class="title fs-2">Змінити дані про клієнта</h2>
+<h2 class="title fs-2">Змінити дані про додаткову послугу</h2>
 
 <form   [formGroup]="putForm" (ngSubmit)="sendRequest()">
-  <div class="form-fields-container">
-    <label class="form-field">
-      <span class="field-label">Ключ:</span>
-      <select class="select" formControlName="key">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
-      </select>
-    </label>
-    
+  <div class="form-fields-container">    
     <label for="valueOfKey" class="form-field">
-      <span class="field-label">Значення ключа:</span>
+      <span class="field-label">Номер додаткової послуги:</span>
       <input class="input" type="text" id="valueOfKey" formControlName="valueOfKey">
     </label>
 
     <label class="form-field">
       <span class="field-label">Поле:</span>
       <select class="select" formControlName="field">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
-        <option value="email">E-mail</option>
-        <option value="phone">Номер телефону</option>
-        <option value="user_status">Статус</option>
-        <option value="balance">Баланс</option>
+        <option value="addon_name">Назва послуги</option>
+        <option value="addon_number">Номер послуги</option>
+        <option value="client_number">Номер клієнта</option>
+        <option value="main_domain">Основний домен</option>
+        <option value="addon_status">Статус</option>
+        <option value="order_date">Дата замовлення</option>
+        <option value="order_date">Дата закінчення</option>
       </select>
     </label>
 

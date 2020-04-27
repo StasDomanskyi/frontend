@@ -31,50 +31,65 @@ import { PostServerDataComponent } from './components/server-data/post-server-da
 import { PostDomainListComponent } from './components/domain-list/post-domain-list/post-domain-list.component';
 import { GetEmployeeDataComponent } from './components/employee-data/get-employee-data/get-employee-data.component';
 import { GetDomainListComponent } from './components/domain-list/get-domain-list/get-domain-list.component';
+import { PutAccountDataComponent } from './components/account-data/put-account-data/put-account-data.component';
+import { PutHostingServiceDataComponent } from './components/hosting-service-data/put-hosting-service-data/put-hosting-service-data.component';
+import { PutSupportDataComponent } from './components/support-data/put-support-data/put-support-data.component';
+import { PutAdditionalDataComponent } from './components/additional-data/put-additional-data/put-additional-data.component';
+import { PutEmployeeDataComponent } from './components/employee-data/put-employee-data/put-employee-data.component';
+import { PutServerDataComponent } from './components/server-data/put-server-data/put-server-data.component';
+import { PutDomainListComponent } from './components/domain-list/put-domain-list/put-domain-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    // R1 - Table
     ClientsListComponent,
     GetClientsListComponent,
     PostClientsListComponent,
     PutClientsListComponent,
     DeleteClientsListComponent,
+    // R2 - Table
     AccountDataComponent,
     GetAccountDataComponent,
     PostAccountDataComponent,
-    /* PutAccountDataComponent, */
+    PutAccountDataComponent,
     /* DeleteAccountDataComponent, */
+    // R3 - Table
     HostingServiceDataComponent,
     GetHostingServiceDataComponent,
     PostHostingServiceDataComponent,
-    /* PutHostingServiceDataComponent, */
+    PutHostingServiceDataComponent,
     /* DeleteHostingServiceDataComponent, */
+    // R4 - Table
     SupportDataComponent,
     GetSupportDataComponent,
     PostSupportDataComponent,
-    /* PutSupportDataComponent, */
+    PutSupportDataComponent,
     /* DeleteSupportDataComponent, */
+    // R5 - Table
     AdditionalDataComponent,
     GetAdditionalDataComponent,
     PostAdditionalDataComponent,
-    /* PutAdditionalDataComponent, */
+    PutAdditionalDataComponent,
     /* DeleteAdditionalDataComponent, */
+    // R6 - Table
     EmployeeDataComponent,
     GetEmployeeDataComponent,
     PostEmployeeDataComponent,
-    /* PutEmployeeDataComponent, */
+    PutEmployeeDataComponent,
     /* DeleteEmployeeDataComponent, */
+    // R7 - Table
     ServerDataComponent,
     /* GetServerDataComponent, */
     PostServerDataComponent,
-    /* PutServerDataComponent, */
+    PutServerDataComponent,
     /* DeleteServerDataComponent, */
+    // R8 - Table
     DomainListComponent,
     GetDomainListComponent,
     PostDomainListComponent,
-    /* PutDomainListComponent, */
+    PutDomainListComponent,
     /* DeleteDomainListComponent, */
   ],
   imports: [

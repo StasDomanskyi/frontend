@@ -5,8 +5,8 @@
     <label class="form-field">
       <span class="field-label">Ключ:</span>
       <select class="select" formControlName="key">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
+        <option value="service_number" selected>Номер послуги</option>
+        <option value="service_name">Назва послуги</option>
       </select>
     </label>
     
@@ -18,12 +18,14 @@
     <label class="form-field">
       <span class="field-label">Поле:</span>
       <select class="select" formControlName="field">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
-        <option value="email">E-mail</option>
-        <option value="phone">Номер телефону</option>
-        <option value="user_status">Статус</option>
-        <option value="balance">Баланс</option>
+        <option value="service_name">Назва послуги</option>
+        <option value="service_number">Номер послуги</option>
+        <option value="client_number">Номер клієнта</option>
+        <option value="main_domain">Основний домен</option>
+        <option value="status">Статус</option>
+        <option value="server">Сервер</option>
+        <option value="server">Дата замовлення</option>
+        <option value="server">Дата закінчення</option>
       </select>
     </label>
 
