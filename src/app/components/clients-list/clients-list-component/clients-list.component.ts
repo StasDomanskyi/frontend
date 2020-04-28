@@ -10,6 +10,7 @@ export class ClientsListComponent implements OnInit {
   public title: string = 'Список клієнтів';
   
   public items;
+  public amount: number = 0;
 
   private request: string;
   
@@ -30,6 +31,7 @@ export class ClientsListComponent implements OnInit {
     let subscribtion = await this.httpService.get(endpoint).subscribe((res) => {
       console.log(res);
       this.items = res;
+      this.amount = this.items.length;
     });
   }
 }
