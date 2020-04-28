@@ -3,14 +3,14 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { HttpService } from 'src/app/services/httpService/http-service';
 
 @Component({
-  selector: 'app-delete-clients-list',
-  templateUrl: './delete-clients-list.component.html',
-  styleUrls: ['./delete-clients-list.component.scss']
+  selector: 'app-delete-support-data',
+  templateUrl: './delete-support-data.component.html',
+  styleUrls: ['./delete-support-data.component.scss']
 })
-export class DeleteClientsListComponent implements OnInit {
+export class DeleteSupportDataComponent implements OnInit {
   public deleteForm = new FormGroup({
-    key: new FormControl(''),
-    valueOfKey: new FormControl(''),
+    prefix: new FormControl(''),
+    ticket_number: new FormControl(''),
   });
 
   public request: string = null;
@@ -22,7 +22,7 @@ export class DeleteClientsListComponent implements OnInit {
   }
 
   public sendRequest() {
-    this.request = `http://localhost:3000/r1/${this.deleteForm.value.key}/${this.deleteForm.value.valueOfKey}`;
+    this.request = `http://localhost:3000/r4/${this.deleteForm.value.prefix}/${this.deleteForm.value.ticket_number}`;
 
     this.deleteData(this.request);
     return this.items;

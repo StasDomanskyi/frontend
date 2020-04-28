@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DeleteClientsListComponent } from './delete-hosting-service-data.component';
+import { DeleteHostingServiceDataComponent } from './delete-hosting-service-data.component';
 
-describe('DeleteClientsListComponent', () => {
-  let component: DeleteClientsListComponent;
-  let fixture: ComponentFixture<DeleteClientsListComponent>;
+describe('DeleteHostingServiceDataComponent', () => {
+  let component: DeleteHostingServiceDataComponent;
+  let fixture: ComponentFixture<DeleteHostingServiceDataComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DeleteClientsListComponent ]
+      declarations: [ DeleteHostingServiceDataComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DeleteClientsListComponent);
+    fixture = TestBed.createComponent(DeleteHostingServiceDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -38,6 +38,13 @@ import { PutAdditionalDataComponent } from './components/additional-data/put-add
 import { PutEmployeeDataComponent } from './components/employee-data/put-employee-data/put-employee-data.component';
 import { PutServerDataComponent } from './components/server-data/put-server-data/put-server-data.component';
 import { PutDomainListComponent } from './components/domain-list/put-domain-list/put-domain-list.component';
+import { DeleteAccountDataComponent } from './components/account-data/delete-account-data/delete-account-data.component';
+import { DeleteHostingServiceDataComponent } from './components/hosting-service-data/delete-hosting-service-data/delete-hosting-service-data.component';
+import { DeleteSupportDataComponent } from './components/support-data/delete-support-data/delete-support-data.component';
+import { DeleteAdditionalDataComponent } from './components/additional-data/delete-additional-data/delete-additional-data.component';
+import { DeleteEmployeeDataComponent } from './components/employee-data/delete-employee-data/delete-employee-data.component';
+import { DeleteServerDataComponent } from './components/server-data/delete-server-data/delete-server-data.component';
+import { DeleteDomainListComponent } from './components/domain-list/delete-domain-list/delete-domain-list.component';
 
 @NgModule({
   declarations: [
@@ -54,43 +61,43 @@ import { PutDomainListComponent } from './components/domain-list/put-domain-list
     GetAccountDataComponent,
     PostAccountDataComponent,
     PutAccountDataComponent,
-    /* DeleteAccountDataComponent, */
+    DeleteAccountDataComponent,
     // R3 - Table
     HostingServiceDataComponent,
     GetHostingServiceDataComponent,
     PostHostingServiceDataComponent,
     PutHostingServiceDataComponent,
-    /* DeleteHostingServiceDataComponent, */
+    DeleteHostingServiceDataComponent,
     // R4 - Table
     SupportDataComponent,
     GetSupportDataComponent,
     PostSupportDataComponent,
     PutSupportDataComponent,
-    /* DeleteSupportDataComponent, */
+    DeleteSupportDataComponent,
     // R5 - Table
     AdditionalDataComponent,
     GetAdditionalDataComponent,
     PostAdditionalDataComponent,
     PutAdditionalDataComponent,
-    /* DeleteAdditionalDataComponent, */
+    DeleteAdditionalDataComponent,
     // R6 - Table
     EmployeeDataComponent,
     GetEmployeeDataComponent,
     PostEmployeeDataComponent,
     PutEmployeeDataComponent,
-    /* DeleteEmployeeDataComponent, */
+    DeleteEmployeeDataComponent,
     // R7 - Table
     ServerDataComponent,
     /* GetServerDataComponent, */
     PostServerDataComponent,
     PutServerDataComponent,
-    /* DeleteServerDataComponent, */
+    DeleteServerDataComponent,
     // R8 - Table
     DomainListComponent,
     GetDomainListComponent,
     PostDomainListComponent,
     PutDomainListComponent,
-    /* DeleteDomainListComponent, */
+    DeleteDomainListComponent,
   ],
   imports: [
     BrowserModule,

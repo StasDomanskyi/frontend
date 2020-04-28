@@ -1,12 +1,12 @@
-<h2 class="title fs-2">Змінити дані про клієнта</h2>
+<h2 class="title fs-2">Змінити дані про домен</h2>
 
 <form   [formGroup]="putForm" (ngSubmit)="sendRequest()">
   <div class="form-fields-container">
     <label class="form-field">
       <span class="field-label">Ключ:</span>
       <select class="select" formControlName="key">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
+        <option value="domain_number">Номер домена</option>
+        <option value="domain_name">Ім'я домена</option>
       </select>
     </label>
     
@@ -18,12 +18,14 @@
     <label class="form-field">
       <span class="field-label">Поле:</span>
       <select class="select" formControlName="field">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
-        <option value="email">E-mail</option>
-        <option value="phone">Номер телефону</option>
-        <option value="user_status">Статус</option>
-        <option value="user_name">Баланс</option>
+        <option value="domain_name">Ім’я домена</option>
+        <option value="NS">NS, що використовує домен</option>
+        <option value="client_number">Номер власника</option>
+        <option value="domain_status">Статус домена</option>
+        <option value="invoice">Номер ел.рахунку</option>
+        <option value="register">Реєстратор</option>
+        <option value="register_date">Дата реєстрації</option>
+        <option value="end_date">Дата відключення</option>
       </select>
     </label>
 

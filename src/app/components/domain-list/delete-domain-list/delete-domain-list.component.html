@@ -1,12 +1,12 @@
-<h2 class="title fs-2">Видалити клієнта</h2>
+<h2 class="title fs-2">Видалити домен</h2>
 
 <form   [formGroup]="deleteForm" (ngSubmit)="sendRequest()">
   <div class="form-fields-container">
     <label class="form-field">
       <span class="field-label">Ключ:</span>
       <select class="select" formControlName="key">
-        <option value="user_number">Номер клієнта</option>
-        <option value="user_name">Ім'я клієнта</option>
+        <option value="domain_number">Номер домена</option>
+        <option value="domain_name">Ім'я домена</option>
       </select>
     </label>
     

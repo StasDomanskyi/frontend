@@ -33,6 +33,13 @@ import { PutAdditionalDataComponent } from './components/additional-data/put-add
 import { PutEmployeeDataComponent } from './components/employee-data/put-employee-data/put-employee-data.component';
 import { PutServerDataComponent } from './components/server-data/put-server-data/put-server-data.component';
 import { PutDomainListComponent } from './components/domain-list/put-domain-list/put-domain-list.component';
+import { DeleteAccountDataComponent } from './components/account-data/delete-account-data/delete-account-data.component';
+import { DeleteHostingServiceDataComponent } from './components/hosting-service-data/delete-hosting-service-data/delete-hosting-service-data.component';
+import { DeleteSupportDataComponent } from './components/support-data/delete-support-data/delete-support-data.component';
+import { DeleteAdditionalDataComponent } from './components/additional-data/delete-additional-data/delete-additional-data.component';
+import { DeleteEmployeeDataComponent } from './components/employee-data/delete-employee-data/delete-employee-data.component';
+import { DeleteServerDataComponent } from './components/server-data/delete-server-data/delete-server-data.component';
+import { DeleteDomainListComponent } from './components/domain-list/delete-domain-list/delete-domain-list.component';
 
 
 const routes: Routes = [
@@ -48,43 +55,43 @@ const routes: Routes = [
   {path: 'account-data/get-form', component: GetAccountDataComponent},
   {path: 'account-data/post-form', component: PostAccountDataComponent},
   {path: 'account-data/put-form', component: PutAccountDataComponent},
-/* {path: 'account-data/delete-form', component: DeleteAccountDataComponent}, */
+  {path: 'account-data/delete-form', component: DeleteAccountDataComponent},
   // HOSTING SERVICE
   {path: 'hosting-service-data', component: HostingServiceDataComponent},
   {path: 'hosting-service-data/get-form', component: GetHostingServiceDataComponent},
   {path: 'hosting-service-data/post-form', component: PostHostingServiceDataComponent},
   {path: 'hosting-service-data/put-form', component: PutHostingServiceDataComponent},
-/* {path: 'hosting-service-data/delete-form', component: DeleteHostingServiceDataComponent}, */
+  {path: 'hosting-service-data/delete-form', component: DeleteHostingServiceDataComponent},
   // SUPPORT DATA
   {path: 'support-data', component: SupportDataComponent},
   {path: 'support-data/get-form', component: GetSupportDataComponent},
   {path: 'support-data/post-form', component: PostSupportDataComponent},
   {path: 'support-data/put-form', component: PutSupportDataComponent},
-  /* {path: 'support-data/delete-form', component: DeletetSupportDataComponent}, */
+  {path: 'support-data/delete-form', component: DeleteSupportDataComponent},
   // ADDITIONAL DATA
   {path: 'additional-data', component: AdditionalDataComponent},
   {path: 'additional-data/get-form', component: GetAdditionalDataComponent},
   {path: 'additional-data/post-form', component: PostAdditionalDataComponent},
   {path: 'additional-data/put-form', component: PutAdditionalDataComponent},
-  /* {path: 'additional-data/delete-form', component: DeleteAdditionalDataComponent}, */
+  {path: 'additional-data/delete-form', component: DeleteAdditionalDataComponent},
   // EMPLOYEE DATA
   {path: 'employee-data', component: EmployeeDataComponent},
   {path: 'employee-data/get-form', component: GetEmployeeDataComponent},
   {path: 'employee-data/post-form', component: PostEmployeeDataComponent},
   {path: 'employee-data/put-form', component: PutEmployeeDataComponent},
-  /* {path: 'employee-data/delete-form', component: DeleteEmployeeDataComponent}, */
+  {path: 'employee-data/delete-form', component: DeleteEmployeeDataComponent},
   // SERVER DATA  
   {path: 'server-data', component: ServerDataComponent},
   /* {path: 'server-data/get-form', component: GetServerDataComponent}, */
   {path: 'server-data/post-form', component: PostServerDataComponent},
   {path: 'server-data/put-form', component: PutServerDataComponent},
-  /* {path: 'server-data/delete-form', component: DeleteServerDataComponent}, */
+  {path: 'server-data/delete-form', component: DeleteServerDataComponent},
   // DOMAIN LIST
   {path: 'domain-list', component: DomainListComponent},
   {path: 'domain-list/get-form', component: GetDomainListComponent},
   {path: 'domain-list/post-form', component: PostDomainListComponent},
   {path: 'domain-list/put-form', component: PutDomainListComponent},
-  /* {path: 'domain-list/delete-form', component: DeleteDomainListComponent}, */
+  {path: 'domain-list/delete-form', component: DeleteDomainListComponent},
 ];
 
 @NgModule({
