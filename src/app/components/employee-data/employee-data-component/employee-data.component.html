@@ -26,27 +26,29 @@
   </div>
 </div>
 
-<!-- <div *ngIf="items">
+<div *ngIf="amount">
   <table class="general-table">
     <thead>
       <tr>
-      <th>№</th>
-      <th>ПІБ клієнта</th>
+      <th>ПІБ</th>
+      <th>Вік</th>
+      <th>Досвід</th>
+      <th>Посада</th>
       <th>E-mail</th>
       <th>Номер телефону</th>
-      <th>Статус</th>
-      <th>Баланс</th>
+      <th>Номер працівника</th>
     </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of items">
-        <td>{{item.user_number}}</td>
-        <td>{{item.user_name}}</td>
+        <td>{{item.employee_full_name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.experience}}</td>
+        <td>{{item.position}}</td>
         <td>{{item.email}}</td>
-        <td>{{item.phone}}</td>
-        <td>{{item.user_status}}</td>
-        <td>{{item.user_number}}</td>
+        <td>{{item.phone_number}}</td>
+        <td>{{item.employee_number}}</td>
       </tr>
     </tbody>
   </table>
-</div> -->
+</div>

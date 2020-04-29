@@ -12,6 +12,8 @@ export class HostingServiceDataComponent implements OnInit {
   public items;
 
   private request: string;
+
+  public amount: number = 0;
   
   constructor(private httpService: HttpService) { }
 
@@ -29,6 +31,7 @@ export class HostingServiceDataComponent implements OnInit {
     let subscribtion = await this.httpService.get(endpoint).subscribe((res) => {
       console.log(res);
       this.items = res;
+      this.amount = this.items.length;
     });
   }
 }

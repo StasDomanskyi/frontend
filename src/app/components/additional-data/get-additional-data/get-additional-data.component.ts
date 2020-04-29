@@ -17,6 +17,7 @@ export class GetAdditionalDataComponent implements OnInit {
 
   public request: string = null;
   public items: any;
+  public amount: number = 0;
 
   constructor(private httpService: HttpService) { }
 
@@ -41,6 +42,7 @@ export class GetAdditionalDataComponent implements OnInit {
     let subscribtion = await this.httpService.get(endpoint, data).subscribe((res) => {
       console.log(res);
       this.items = res;
+      this.amount = this.items.length;
     });
   }
 }

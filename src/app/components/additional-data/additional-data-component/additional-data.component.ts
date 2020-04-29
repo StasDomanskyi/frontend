@@ -11,6 +11,8 @@ export class AdditionalDataComponent implements OnInit {
 
   public items;
 
+  public amount: number = 0;
+
   private request: string;
   
   
@@ -30,6 +32,7 @@ export class AdditionalDataComponent implements OnInit {
     let subscribtion = await this.httpService.get(endpoint).subscribe((res) => {
       console.log(res);
       this.items = res;
+      this.amount = this.items.length;
     });
   }
 }

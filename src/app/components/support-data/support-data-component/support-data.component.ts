@@ -8,7 +8,10 @@ import { HttpService } from 'src/app/services/httpService/http-service';
 })
 export class SupportDataComponent implements OnInit {
   public title: string = 'Дані про запити в підтримку';
+  
   public items;
+
+  public amount: number = 0;
 
   private request: string;
   
@@ -28,6 +31,7 @@ export class SupportDataComponent implements OnInit {
     let subscribtion = await this.httpService.get(endpoint).subscribe((res) => {
       console.log(res);
       this.items = res;
+      this.amount = this.items.length;
     });
   }
 }

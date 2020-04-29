@@ -11,6 +11,8 @@ export class EmployeeDataComponent implements OnInit {
 
   public items;
 
+  public amount: number = 0;
+
   private request: string;
   
   constructor(private httpService: HttpService) { }
@@ -29,6 +31,7 @@ export class EmployeeDataComponent implements OnInit {
     let subscribtion = await this.httpService.get(endpoint).subscribe((res) => {
       console.log(res);
       this.items = res;
+      this.amount = this.items.length;
     });
   }
 }

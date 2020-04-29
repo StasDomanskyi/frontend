@@ -32,24 +32,28 @@
 
 <h3 *ngIf="request" class="title"> Запит надісланий на: {{request}}</h3>
 
-<div *ngIf="items">
-  <table>
+<div *ngIf="amount">
+  <table class="general-table">
     <thead>
       <tr>
-      <th>№ рахунка</th>
-      <th>Опис послуги</th>
-      <th>Сума</th>
-      <th>Статус</th>
-      <th>№ клієнта</th>
-    </tr>
+        <th>Назва послуги</th>
+        <th>Номер послуги</th>
+        <th>Номер клієнта</th>
+        <th>Основний домен</th>
+        <th>Статус</th>
+        <th>Дата замовлення</th>
+        <th>Дата закінчення</th>
+      </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of items">
-        <td>{{item.account_number}}</td>
-        <td>{{item.account_description}}</td>
-        <td>{{item.sum}}</td>
-        <td>{{item.account_status}}</td>
+        <td>{{item.addon_name}}</td>
+        <td>{{item.addon_number}}</td>
         <td>{{item.client_number}}</td>
+        <td>{{item.main_domain}}</td>
+        <td>{{item.addon_status}}</td>
+        <td>{{item.order_date | date:"yyyy-MM-dd"}}</td>
+        <td>{{item.end_date| date:"yyyy-MM-dd"}}</td>
       </tr>
     </tbody>
   </table>
