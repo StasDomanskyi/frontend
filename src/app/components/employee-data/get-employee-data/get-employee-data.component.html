@@ -35,7 +35,6 @@
       <th>E-mail</th>
       <th>Номер працівника</th>
       <th>Статус запитів</th>
-      <th>Кількість запитів з даним статусом</th>
     </tr>
     </thead>
     <tbody>
@@ -45,8 +44,7 @@
         <td>{{item.position}}</td>
         <td>{{item.email}}</td>
         <td>{{item.employee_number}}</td>
-        <td>{{item.ticket_status}}</td>
-        <td>{{item.count_of_open_tickets}}</td>
+        <td>{{item.ticket_status ? item.ticket_status : '---'}}</td>
       </tr>
     </tbody>
   </table>
