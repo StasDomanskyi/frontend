@@ -3,7 +3,7 @@
 <form   [formGroup]="getForm" (ngSubmit)="sendRequest()">
   <div class="form-fields-container">
     <label class="form-field">
-      <span class="field-label">Ключ:</span>
+      <span class="field-label">Критерій пошуку:</span>
       <select class="select" formControlName="key">
         <option value="user_number" selected>Номер клієнта</option>
         <option value="user_name">Ім'я клієнта</option>
@@ -11,7 +11,7 @@
     </label>
     
     <label  class="form-field">
-      <span class="field-label">Значення ключа:</span>
+      <span class="field-label">Значення критерія пошуку:</span>
       <input class="input" type="text" formControlName="valueOfKey">
     </label>
 
@@ -30,7 +30,7 @@
 
 <h3 *ngIf="request" class="title"> Запит надісланий на: {{request}}</h3>
 
-<div *ngIf="items">
+<div *ngIf="amount">
   <table>
     <thead>
       <tr>

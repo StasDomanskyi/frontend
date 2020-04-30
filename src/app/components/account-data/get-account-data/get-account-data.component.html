@@ -13,7 +13,7 @@
     </label>
     
     <label  class="form-field">
-      <span class="field-label">Послуга:</span>
+      <span class="field-label">Назва послуги:</span>
       <input class="input" type="text" formControlName="account">
     </label>
   </div>
@@ -24,16 +24,16 @@
 
 <h3 *ngIf="request" class="title"> Запит надісланий на: {{request}}</h3>
 
-<div *ngIf="items">
+<div *ngIf="amount">
   <table>
     <thead>
       <tr>
-      <th>№ рахунка</th>
-      <th>Опис послуги</th>
-      <th>Сума</th>
-      <th>Статус</th>
-      <th>№ клієнта</th>
-    </tr>
+        <th>№ рахунка</th>
+        <th>Опис послуги</th>
+        <th>Сума</th>
+        <th>Статус</th>
+        <th>№ клієнта</th>
+      </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of items">

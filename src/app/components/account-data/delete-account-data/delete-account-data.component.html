@@ -3,7 +3,7 @@
 <form   [formGroup]="deleteForm" (ngSubmit)="sendRequest()">
   <div class="form-fields-container">
     <label class="form-field">
-      <span class="field-label">Ключ:</span>
+      <span class="field-label">Критерій пошуку:</span>
       <select class="select" formControlName="key">
         <option value="account_number">Номер рахунку</option>
         <option value="account_description">Опис рахунку</option>
@@ -11,7 +11,7 @@
     </label>
     
     <label for="valueOfKey" class="form-field">
-      <span class="field-label">Значення ключа:</span>
+      <span class="field-label">Значення критерія пошуку:</span>
       <input class="input" type="text" id="valueOfKey" formControlName="valueOfKey">
     </label>
   </div>

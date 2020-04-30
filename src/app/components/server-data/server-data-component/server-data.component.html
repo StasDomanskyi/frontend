@@ -30,14 +30,14 @@
   <table class="general-table">
     <thead>
       <tr>
-      <th>Назва сервера</th>
-      <th>Оперативна пам’ять</th>
-      <th>Процесор</th>
-      <th>Диск</th>
-      <th>Обробник</th>
-      <th>Версія сервера БД</th>
-      <th>Послуги</th>
-    </tr>
+        <th>Назва сервера</th>
+        <th>Оперативна пам’ять</th>
+        <th>Процесор</th>
+        <th>Диск</th>
+        <th>Обробник</th>
+        <th>Версія сервера БД</th>
+        <th>Послуги</th>
+      </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of items">
@@ -46,7 +46,7 @@
         <td>{{item.CPU}}</td>
         <td>{{item.drive_size}}</td>
         <td>{{item.handler}}</td>
-        <td>{{item.db_version}}</td>
+        <td>{{item.db_name}} {{item.db_version}}</td>
         <td>{{item.services}}</td>
       </tr>
     </tbody>

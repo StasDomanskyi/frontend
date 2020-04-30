@@ -45,6 +45,7 @@ import { DeleteAdditionalDataComponent } from './components/additional-data/dele
 import { DeleteEmployeeDataComponent } from './components/employee-data/delete-employee-data/delete-employee-data.component';
 import { DeleteServerDataComponent } from './components/server-data/delete-server-data/delete-server-data.component';
 import { DeleteDomainListComponent } from './components/domain-list/delete-domain-list/delete-domain-list.component';
+import { GetServerDataComponent } from './components/server-data/get-server-data/get-server-data.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,7 @@ import { DeleteDomainListComponent } from './components/domain-list/delete-domai
     DeleteEmployeeDataComponent,
     // R7 - Table
     ServerDataComponent,
-    /* GetServerDataComponent, */
+    GetServerDataComponent,
     PostServerDataComponent,
     PutServerDataComponent,
     DeleteServerDataComponent,

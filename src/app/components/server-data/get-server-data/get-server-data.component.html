@@ -1,0 +1,53 @@
+<h2 class="title fs-2">Отримати дані про сервер</h2>
+
+<form   [formGroup]="getForm" (ngSubmit)="sendRequest()">
+  <div class="form-fields-container">   
+    <label  class="form-field">
+      <span class="field-label">Тип послуги:</span>
+      <input class="input" type="text" formControlName="service">
+    </label>
+
+    <label  class="form-field">
+      <span class="field-label">Версія бази даних:</span>
+      <input class="input" type="text" formControlName="version">
+    </label>
+  </div>
+  <div class="home-btn-wrapper">
+    <button class="btn home-btn fs-5" type="submit">Відправити запит</button>
+  </div>
+</form>
+
+<h3 *ngIf="request" class="title"> Запит надісланий на: {{request}}</h3>
+
+<div *ngIf="amount">
+  <table class="general-table">
+    <thead>
+      <tr>
+        <th>Назва сервера</th>
+        <th>Оперативна пам’ять</th>
+        <th>Процесор</th>
+        <th>Диск</th>
+        <th>Обробник</th>
+        <th>Версія сервера БД</th>
+        <th>Послуги</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items">
+        <td>{{item.server_name}}</td>
+        <td>{{item.RAM}}</td>
+        <td>{{item.CPU}}</td>
+        <td>{{item.drive_size}}</td>
+        <td>{{item.handler}}</td>
+        <td>{{item.db_name}} {{item.db_version}}</td>
+        <td>{{item.services}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="home-btn-wrapper">
+  <button routerLink="../" class="btn home-btn fs-5">Назад</button>
+</div>
+
+

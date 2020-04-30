@@ -17,6 +17,7 @@ export class GetClientsListComponent implements OnInit {
 
   public request: string = null;
   public items: any;
+  public amount: number = 0;
 
   constructor(private httpService: HttpService) { }
 
@@ -39,6 +40,7 @@ export class GetClientsListComponent implements OnInit {
     let subscribtion = await this.httpService.get(endpoint).subscribe((res) => {
       console.log(res);
       this.items = res;
+      this.amount = this.items.length;
     });
   }
 }

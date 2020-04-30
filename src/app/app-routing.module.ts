@@ -40,6 +40,7 @@ import { DeleteAdditionalDataComponent } from './components/additional-data/dele
 import { DeleteEmployeeDataComponent } from './components/employee-data/delete-employee-data/delete-employee-data.component';
 import { DeleteServerDataComponent } from './components/server-data/delete-server-data/delete-server-data.component';
 import { DeleteDomainListComponent } from './components/domain-list/delete-domain-list/delete-domain-list.component';
+import { GetServerDataComponent } from './components/server-data/get-server-data/get-server-data.component';
 
 
 const routes: Routes = [
@@ -82,7 +83,7 @@ const routes: Routes = [
   {path: 'employee-data/delete-form', component: DeleteEmployeeDataComponent},
   // SERVER DATA  
   {path: 'server-data', component: ServerDataComponent},
-  /* {path: 'server-data/get-form', component: GetServerDataComponent}, */
+  {path: 'server-data/get-form', component: GetServerDataComponent},
   {path: 'server-data/post-form', component: PostServerDataComponent},
   {path: 'server-data/put-form', component: PutServerDataComponent},
   {path: 'server-data/delete-form', component: DeleteServerDataComponent},
